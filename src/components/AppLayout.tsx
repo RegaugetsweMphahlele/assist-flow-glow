@@ -20,11 +20,35 @@ export function AppLayout({ children, title, breadcrumb }: { children: ReactNode
       {/* Sidebar - desktop */}
       <aside className="hidden md:flex flex-col w-[240px] fixed inset-y-0 left-0 z-30 border-r border-[rgba(99,102,241,0.15)]"
         style={{ background: "var(--color-sidebar-bg)" }}>
-        <div className="px-5 py-6 flex items-center gap-2.5">
-          <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-glow)" }}>
-            <Zap className="w-5 h-5 text-white" strokeWidth={2.5} />
-          </div>
-          <div className="font-bold text-[17px] tracking-tight">WorkFlow <span className="gradient-text">AI</span></div>
+        <div className="px-5 py-6 flex flex-col items-center gap-2">
+          <motion.div
+            initial={{ opacity: 0, letterSpacing: "0.05em" }}
+            animate={{ opacity: 1, letterSpacing: "0.45em" }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className="font-bold text-[18px] gradient-text"
+            style={{ paddingLeft: "0.45em" }}
+          >
+            NEXUS
+          </motion.div>
+          <svg width="28" height="14" viewBox="0 0 28 14" className="overflow-visible">
+            {[
+              { cx: 4, cy: 11, d: 0 },
+              { cx: 24, cy: 11, d: 0.15 },
+              { cx: 14, cy: 3, d: 0.3 },
+            ].map((p, i) => (
+              <motion.circle
+                key={i}
+                cx={p.cx}
+                cy={p.cy}
+                r="2"
+                fill="var(--color-primary)"
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: [0.5, 1, 0.5], scale: [0.8, 1.2, 0.8] }}
+                transition={{ duration: 2, repeat: Infinity, delay: p.d }}
+                style={{ filter: "drop-shadow(0 0 4px var(--color-primary))" }}
+              />
+            ))}
+          </svg>
         </div>
         <nav className="flex-1 px-3 py-4 space-y-1">
           {navItems.map((item) => {
