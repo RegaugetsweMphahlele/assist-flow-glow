@@ -28,9 +28,14 @@ function greeting() {
 }
 
 function Dashboard() {
-  const date = new Date().toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+  const [greet, setGreet] = useState("Hello");
+  const [date, setDate] = useState("");
+  useEffect(() => {
+    setGreet(greeting());
+    setDate(new Date().toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" }));
+  }, []);
   return (
-    <AppLayout title={`${greeting()}, let's get productive.`} breadcrumb="Dashboard">
+    <AppLayout title={`${greet}, let's get productive.`} breadcrumb="Dashboard">
       <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }} className="label-caption mb-8 -mt-2">
         {date}
       </motion.p>
