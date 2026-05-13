@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, FileText, Calendar, Search, MessageSquare, ArrowRight, TrendingUp, Sparkles } from "lucide-react";
 import { AppLayout } from "@/components/AppLayout";
