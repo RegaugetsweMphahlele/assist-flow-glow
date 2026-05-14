@@ -160,32 +160,115 @@ This project was built with **responsible AI use as a core design requirement**:
 
 ## 📁 Project Structure
 
-nexus-ai-assistant/
+📦 nexus-ai-assistant/
 │
 ├── 📄 README.md
+├── 📄 package.json
+├── 📄 tsconfig.json
+├── 📄 vite.config.ts
+├── 📄 bun.lock
+├── 📄 bunfig.toml
+├── 📄 components.json
+├── 📄 eslint.config.js
+├── 📄 .env
+├── 📄 .gitignore
+├── 📄 prettierignore
+├── 📄 prettierrc
+├── 📄 wrangler.jsonc
+│
+├── 📁 .lovable/
+│ └── 📄 project.json
 │
 ├── 📁 src/
-│ ├── 📄 App.jsx
+│ ├── 📄 router.tsx
+│ ├── 📄 routeTree.gen.ts
+│ ├── 📄 server.ts
+│ ├── 📄 start.ts
+│ ├── 📄 styles.css
 │ │
 │ ├── 📁 components/
-│ │ ├── 📄 Sidebar.jsx
-│ │ ├── 📄 Dashboard.jsx
-│ │ ├── 📄 EmailGenerator.jsx
-│ │ ├── 📄 NotesSummarizer.jsx
-│ │ ├── 📄 TaskPlanner.jsx
-│ │ ├── 📄 ResearchAssistant.jsx
-│ │ └── 📄 Chatbot.jsx
+│ │ ├── 📄 AiOutput.tsx
+│ │ ├── 📄 AppLayout.tsx
+│ │ │
+│ │ └── 📁 ui/
+│ │ ├── 📄 accordion.tsx
+│ │ ├── 📄 alert.tsx
+│ │ ├── 📄 alert-dialog.tsx
+│ │ ├── 📄 aspect-ratio.tsx
+│ │ ├── 📄 avatar.tsx
+│ │ ├── 📄 badge.tsx
+│ │ ├── 📄 breadcrumb.tsx
+│ │ ├── 📄 button.tsx
+│ │ ├── 📄 calendar.tsx
+│ │ ├── 📄 card.tsx
+│ │ ├── 📄 carousel.tsx
+│ │ ├── 📄 chart.tsx
+│ │ ├── 📄 checkbox.tsx
+│ │ ├── 📄 collapsible.tsx
+│ │ ├── 📄 command.tsx
+│ │ ├── 📄 context-menu.tsx
+│ │ ├── 📄 dialog.tsx
+│ │ ├── 📄 drawer.tsx
+│ │ ├── 📄 dropdown-menu.tsx
+│ │ ├── 📄 form.tsx
+│ │ ├── 📄 hover-card.tsx
+│ │ ├── 📄 input.tsx
+│ │ ├── 📄 input-otp.tsx
+│ │ ├── 📄 label.tsx
+│ │ ├── 📄 menubar.tsx
+│ │ ├── 📄 navigation-menu.tsx
+│ │ ├── 📄 pagination.tsx
+│ │ ├── 📄 popover.tsx
+│ │ ├── 📄 progress.tsx
+│ │ ├── 📄 radio-group.tsx
+│ │ ├── 📄 resizable.tsx
+│ │ ├── 📄 scroll-area.tsx
+│ │ ├── 📄 select.tsx
+│ │ ├── 📄 separator.tsx
+│ │ ├── 📄 sheet.tsx
+│ │ ├── 📄 sidebar.tsx
+│ │ ├── 📄 skeleton.tsx
+│ │ ├── 📄 slider.tsx
+│ │ ├── 📄 sonner.tsx
+│ │ ├── 📄 switch.tsx
+│ │ ├── 📄 table.tsx
+│ │ ├── 📄 tabs.tsx
+│ │ ├── 📄 textarea.tsx
+│ │ ├── 📄 toggle.tsx
+│ │ ├── 📄 toggle-group.tsx
+│ │ └── 📄 tooltip.tsx
 │ │
-│ └── 📁 styles/
-│ └── 📄 tailwind.css
+│ ├── 📁 hooks/
+│ │ └── 📄 use-mobile.tsx
+│ │
+│ ├── 📁 integrations/
+│ │ └── 📁 supabase/
+│ │ ├── 📄 auth-middleware.tsx
+│ │ ├── 📄 client.server.ts
+│ │ ├── 📄 client.ts
+│ │ └── 📄 types.ts
+│ │
+│ ├── 📁 lib/
+│ │ ├── 📄 ai-gateway.ts
+│ │ ├── 📄 error-capture.ts
+│ │ ├── 📄 error-page.ts
+│ │ └── 📄 utils.ts
+│ │
+│ └── 📁 routes/
+│ ├── 📄 __root.tsx
+│ ├── 📄 index.tsx
+│ ├── 📄 chat.tsx
+│ ├── 📄 email.tsx
+│ ├── 📄 notes.tsx
+│ ├── 📄 planner.tsx
+│ ├── 📄 research.tsx
+│ │
+│ └── 📁 api/
+│ ├── 📄 chat.ts
+│ └── 📄 generate.ts
 │
-└── 📁 screenshots/
-├── 🖼️ dashboard.png
-├── 🖼️ email-generator.png
-├── 🖼️ notes-summarizer.png
-├── 🖼️ task-planner.png
-├── 🖼️ research-assistant.png
-└── 🖼️ chatbot.png
+└── 📁 supabase/
+└── 📄 config.toml
 
 
 ---
