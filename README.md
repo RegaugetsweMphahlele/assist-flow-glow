@@ -297,7 +297,7 @@ This project was created for educational purposes as part of the CAPACITI AI Ski
 
 ### 🚀 Ready to boost your productivity?
 
-[![Live Demo](https://assist-flow-glow-regaugetswe-mphahlele.lovable.app/)
+**[!Live Demo](https://assist-flow-glow-regaugetswe-mphahlele.lovable.app/)**
 
 ---
 
