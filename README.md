@@ -1,154 +1,214 @@
-NEXUS - AI Workplace Productivity Assistant
-https://img.shields.io/badge/Live_Demo-https://assist--flow--glow--regaugetswe--mphahlele.lovable.app/-blue?style=for-the-badge&logo=vercel
+# NEXUS - AI Workplace Productivity Assistant
 
-📌 Overview
-NEXUS is an AI-powered workplace productivity dashboard that helps professionals automate five core administrative tasks using artificial intelligence. Built as a single integrated platform with a clean SaaS-style interface, NEXUS addresses the daily challenges of email drafting, meeting documentation, task planning, research synthesis, and general workplace queries.
 
-"Professionals spend an average of 2.5 hours per day on emails alone — NEXUS gives that time back."
+[![Live URL](https://assist-flow-glow-regaugetswe-mphahlele.lovable.app/)
 
-🚀 Live Demo
-Click here to view the live application
+---
 
-📸 Screenshots
-Dashboard Overview
-https://Screenshot%25202026-05-14%2520125316.png
+## 📌 Overview
 
-The main dashboard showing key metrics and quick access to all five AI tools.
+**NEXUS** is an AI-powered workplace productivity dashboard that helps professionals automate five core administrative tasks using artificial intelligence. Built as a single integrated platform with a clean SaaS-style interface, NEXUS addresses the daily challenges of email drafting, meeting documentation, task planning, research synthesis, and general workplace queries.
 
-Smart Email Generator
-https://Screenshot%25202026-05-14%2520125332.png
+> *"Professionals spend an average of 2.5 hours per day on emails alone — NEXUS gives that time back."*
 
-Generate professional emails with tone (Formal/Friendly/Persuasive) and audience control.
+---
 
-Meeting Notes Summarizer
-https://Screenshot%25202026-05-14%2520125344.png
+## 🚀 Live Demo
 
-Transform raw meeting notes into structured summaries with decisions, action items, and next steps.
+**[Click here to view the live application](https://assist-flow-glow-regaugetswe-mphahlele.lovable.app/)**
 
-AI Task Planner
-https://Screenshot%25202026-05-14%2520125405.png
+---
 
-Create prioritized daily schedules using the Eisenhower Matrix based on your tasks, hours, and deadlines.
+## 📸 Screenshots
 
-AI Research Assistant
-https://Screenshot%25202026-05-14%2520125420.png
+### Dashboard Overview
 
-Get instant summaries, key insights, and actionable recommendations from any topic or article.
+<img src="Screenshot 2026-05-14 125316.png" alt="Dashboard" width="800"/>
 
-AI Chatbot Interface
-https://Screenshot%25202026-05-14%2520125435.png
+*The main dashboard showing key metrics and quick access to all five AI tools.*
 
-Interactive workplace assistant for open-ended queries and professional guidance.
+---
 
-✨ Features
-Feature	Description
-📧 Smart Email Generator	Generate professional emails with tone control (Formal/Friendly/Persuasive) and recipient-specific customization
-📝 Meeting Notes Summarizer	Extract decisions, action items with owners, deadlines, and next steps from raw meeting notes
-📋 AI Task Planner	Build prioritized daily/weekly schedules using the Eisenhower Matrix with time optimization tips
-🔬 AI Research Assistant	Summarize topics and provide 5 key insights + 3 actionable recommendations instantly
-💬 AI Chatbot	Interactive workplace assistant for open-ended queries with context awareness
-Design Principles
-✅ Single dashboard — All tools accessible from one sidebar navigation
+### Smart Email Generator
 
-✅ Editable outputs — Every AI-generated result can be reviewed and modified
+<img src="Screenshot 2026-05-14 125332.png" alt="Email Generator" width="800"/>
 
-✅ Responsive design — Fully functional on mobile and desktop devices
+*Generate professional emails with tone (Formal/Friendly/Persuasive) and audience control.*
 
-✅ Prompt transparency — Each feature displays the underlying prompt strategy
+---
 
-✅ Responsible AI — Disclaimers and validation guidance built into the UI
+### Meeting Notes Summarizer
 
-🛠️ Technologies Used
-Category	Technology
-Frontend Framework	React.js
-Styling	Tailwind CSS
-AI Model	Claude (Anthropic) via API
-Build Tool	Lovable AI
-Version Control	GitHub
-🧠 Prompt Engineering Examples
+<img src="Screenshot 2026-05-14 125344.png" alt="Notes Summarizer" width="800"/>
+
+*Transform raw meeting notes into structured summaries with decisions, action items, and next steps.*
+
+---
+
+### AI Task Planner
+
+<img src="Screenshot 2026-05-14 125405.png" alt="Task Planner" width="800"/>
+
+*Create prioritized daily schedules using the Eisenhower Matrix based on your tasks, hours, and deadlines.*
+
+---
+
+### AI Research Assistant
+
+<img src="Screenshot 2026-05-14 125420.png" alt="Research Assistant" width="800"/>
+
+*Get instant summaries, key insights, and actionable recommendations from any topic or article.*
+
+---
+
+### AI Chatbot Interface
+
+<img src="Screenshot 2026-05-14 125435.png" alt="AI Chatbot" width="800"/>
+
+*Interactive workplace assistant for open-ended queries and professional guidance.*
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| **📧 Smart Email Generator** | Generate professional emails with tone control (Formal/Friendly/Persuasive) and recipient-specific customization |
+| **📝 Meeting Notes Summarizer** | Extract decisions, action items with owners, deadlines, and next steps from raw meeting notes |
+| **📋 AI Task Planner** | Build prioritized daily/weekly schedules using the Eisenhower Matrix with time optimization tips |
+| **🔬 AI Research Assistant** | Summarize topics and provide 5 key insights + 3 actionable recommendations instantly |
+| **💬 AI Chatbot** | Interactive workplace assistant for open-ended queries with context awareness |
+
+### Design Principles
+- ✅ **Single dashboard** — All tools accessible from one sidebar navigation
+- ✅ **Editable outputs** — Every AI-generated result can be reviewed and modified
+- ✅ **Responsive design** — Fully functional on mobile and desktop devices
+- ✅ **Prompt transparency** — Each feature displays the underlying prompt strategy
+- ✅ **Responsible AI** — Disclaimers and validation guidance built into the UI
+
+---
+
+## 🛠️ Technologies Used
+
+| Category | Technology |
+|----------|------------|
+| **Frontend Framework** | React.js |
+| **Styling** | Tailwind CSS |
+| **AI Model** | Claude (Anthropic) via API |
+| **Build Tool** | Lovable AI |
+| **Version Control** | GitHub |
+
+---
+
+## 🧠 Prompt Engineering Examples
+
 Each feature uses a structured role-based prompt with dynamic variable injection:
 
-Feature	Sample System Prompt
-Email Generator	"You are a professional business communication expert. Generate a [TONE] email to a [RECIPIENT_TYPE] about [SUBJECT]. Context: [CONTEXT]. Structure with greeting, body, and sign-off."
-Notes Summarizer	*"Analyze meeting notes and return: 1) 3-sentence summary, 2) Key Decisions, 3) Action Items with owner/deadline, 4) Next Steps."*
-Task Planner	"Create a prioritized schedule using the Eisenhower Matrix. Label tasks High/Medium/Low priority. Include a time optimization tip."
-Research Assistant	*"Return: 1) 4-sentence summary, 2) 5 key insights, 3) 3 actionable recommendations. Avoid jargon."*
-AI Chatbot	"Respond helpfully, concisely, and professionally. If unsure, say so honestly rather than guessing."
-Prompt Techniques Applied
-🎭 Role assignment — AI given specific professional persona per feature
+| Feature | Sample System Prompt |
+|---------|---------------------|
+| **Email Generator** | *"You are a professional business communication expert. Generate a [TONE] email to a [RECIPIENT_TYPE] about [SUBJECT]. Context: [CONTEXT]. Structure with greeting, body, and sign-off."* |
+| **Notes Summarizer** | *"Analyze meeting notes and return: 1) 3-sentence summary, 2) Key Decisions, 3) Action Items with owner/deadline, 4) Next Steps."* |
+| **Task Planner** | *"Create a prioritized schedule using the Eisenhower Matrix. Label tasks High/Medium/Low priority. Include a time optimization tip."* |
+| **Research Assistant** | *"Return: 1) 4-sentence summary, 2) 5 key insights, 3) 3 actionable recommendations. Avoid jargon."* |
+| **AI Chatbot** | *"Respond helpfully, concisely, and professionally. If unsure, say so honestly rather than guessing."* |
 
-📐 Output structure — Prompts specify numbered sections and bullet formats
+### Prompt Techniques Applied
+- 🎭 **Role assignment** — AI given specific professional persona per feature
+- 📐 **Output structure** — Prompts specify numbered sections and bullet formats
+- 🔄 **Variable injection** — User inputs dynamically inserted
+- ⚡ **Constraint setting** — Word limits prevent verbose outputs
+- 🎯 **Honest fallback** — Chatbot acknowledges uncertainty
 
-🔄 Variable injection — User inputs dynamically inserted
+---
 
-⚡ Constraint setting — Word limits prevent verbose outputs
+## 📊 Problem Statement & Solution
 
-🎯 Honest fallback — Chatbot acknowledges uncertainty
+### Four Core Pain Points Addressed:
+1. ✍️ Drafting professional emails from scratch for every communication
+2. 📋 Manually transcribing and summarizing meeting notes
+3. ⏰ Struggling to prioritize tasks without a structured system
+4. 🔍 Spending excessive time researching topics and synthesizing information
 
-📊 Problem Statement & Solution
-Four Core Pain Points Addressed:
-✍️ Drafting professional emails from scratch for every communication
+### NEXUS solves these through:
+> A single, integrated AI-powered platform that automates these tasks — allowing professionals to focus on higher-value work.
 
-📋 Manually transcribing and summarizing meeting notes
+---
 
-⏰ Struggling to prioritize tasks without a structured system
+## 🛡️ Responsible AI Statement
 
-🔍 Spending excessive time researching topics and synthesizing information
+This project was built with **responsible AI use as a core design requirement**:
 
-NEXUS solves these through:
-A single, integrated AI-powered platform that automates these tasks — allowing professionals to focus on higher-value work.
+- ✏️ **All AI outputs are editable** — users are always in control of final content
+- ⚠️ **Disclaimer on every screen** — reminding users to review AI outputs
+- 📢 **Known limitations acknowledged** — AI can produce biased, outdated, or incorrect information
+- 🔒 **No data storage** — No personal or sensitive data is logged
+- 👁️ **Prompt transparency** — System prompts are viewable in each feature
 
-🛡️ Responsible AI Statement
-This project was built with responsible AI use as a core design requirement:
+> *"AI tools are assistants, not authorities. Human review and critical thinking remain essential."*
 
-✏️ All AI outputs are editable — users are always in control of final content
+---
 
-⚠️ Disclaimer on every screen — reminding users to review AI outputs
+## 🎯 Evaluation Criteria Alignment
 
-📢 Known limitations acknowledged — AI can produce biased, outdated, or incorrect information
+| Criteria | How NEXUS Addresses It |
+|----------|------------------------|
+| **Problem Relevance (20%)** | Targets repetitive workplace tasks faced daily by professionals |
+| **Prompt Engineering (25%)** | Structured, role-specific prompts with tone, audience, and format parameters |
+| **Functionality (25%)** | All 5 features produce accurate, editable AI outputs with real-time generation |
+| **Innovation (15%)** | Single integrated dashboard combining 5 tools with prompt transparency |
+| **Responsible AI (10%)** | Footer disclaimer, documented limitations, editable outputs |
+| **Presentation (5%)** | Live demo with walkthrough of each feature |
 
-🔒 No data storage — No personal or sensitive data is logged
+---
 
-👁️ Prompt transparency — System prompts are viewable in each feature
+## 📁 Project Structure
 
-"AI tools are assistants, not authorities. Human review and critical thinking remain essential."
-
-🎯 Evaluation Criteria Alignment
-Criteria	How NEXUS Addresses It
-Problem Relevance (20%)	Targets repetitive workplace tasks faced daily by professionals
-Prompt Engineering (25%)	Structured, role-specific prompts with tone, audience, and format parameters
-Functionality (25%)	All 5 features produce accurate, editable AI outputs with real-time generation
-Innovation (15%)	Single integrated dashboard combining 5 tools with prompt transparency
-Responsible AI (10%)	Footer disclaimer, documented limitations, editable outputs
-Presentation (5%)	Live demo with walkthrough of each feature
-📁 Project Structure
-text
 nexus-ai-assistant/
 ├── src/
-│   ├── components/
-│   │   ├── Sidebar.jsx
-│   │   ├── EmailGenerator.jsx
-│   │   ├── NotesSummarizer.jsx
-│   │   ├── TaskPlanner.jsx
-│   │   ├── ResearchAssistant.jsx
-│   │   ├── Chatbot.jsx
-│   │   └── Dashboard.jsx
-│   ├── styles/
-│   │   └── tailwind.css
-│   └── App.jsx
+│ ├── components/
+│ │ ├── Sidebar.jsx
+│ │ ├── EmailGenerator.jsx
+│ │ ├── NotesSummarizer.jsx
+│ │ ├── TaskPlanner.jsx
+│ │ ├── ResearchAssistant.jsx
+│ │ ├── Chatbot.jsx
+│ │ └── Dashboard.jsx
+│ ├── styles/
+│ │ └── tailwind.css
+│ └── App.jsx
 └── README.md
-📱 Responsive Design
+
+
+---
+
+## 📱 Responsive Design
+
 NEXUS is fully responsive and works seamlessly on:
+- 💻 Desktop computers
+- 📱 Tablets
+- 📲 Mobile phones
 
-💻 Desktop computers
+---
 
-📱 Tablets
+## 👨‍💻 Author
 
-📲 Mobile phones
-
-👨‍💻 Author
-Regaugetswe Mphahlele
+**Regaugetswe Mphahlele**  
 CAPACITI AI Skills Accelerator Programme — Week 2 Project
 
-📄 License
+---
+
+## 📄 License
+
 This project was created for educational purposes as part of the CAPACITI AI Skills Accelerator Programme.
+
+---
+
+### 🚀 Ready to boost your productivity?
+
+[![Live Demo](https://assist-flow-glow-regaugetswe-mphahlele.lovable.app/)
+
+---
+
+*Submitted for CAPACITI AI Skills Accelerator Programme — Week 2 Project*
+
+
