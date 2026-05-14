@@ -161,19 +161,31 @@ This project was built with **responsible AI use as a core design requirement**:
 ## 📁 Project Structure
 
 nexus-ai-assistant/
-├── src/
-│ ├── components/
-│ │ ├── Sidebar.jsx
-│ │ ├── EmailGenerator.jsx
-│ │ ├── NotesSummarizer.jsx
-│ │ ├── TaskPlanner.jsx
-│ │ ├── ResearchAssistant.jsx
-│ │ ├── Chatbot.jsx
-│ │ └── Dashboard.jsx
-│ ├── styles/
-│ │ └── tailwind.css
-│ └── App.jsx
-└── README.md
+│
+├── 📄 README.md
+│
+├── 📁 src/
+│ ├── 📄 App.jsx
+│ │
+│ ├── 📁 components/
+│ │ ├── 📄 Sidebar.jsx
+│ │ ├── 📄 Dashboard.jsx
+│ │ ├── 📄 EmailGenerator.jsx
+│ │ ├── 📄 NotesSummarizer.jsx
+│ │ ├── 📄 TaskPlanner.jsx
+│ │ ├── 📄 ResearchAssistant.jsx
+│ │ └── 📄 Chatbot.jsx
+│ │
+│ └── 📁 styles/
+│ └── 📄 tailwind.css
+│
+└── 📁 screenshots/
+├── 🖼️ dashboard.png
+├── 🖼️ email-generator.png
+├── 🖼️ notes-summarizer.png
+├── 🖼️ task-planner.png
+├── 🖼️ research-assistant.png
+└── 🖼️ chatbot.png
 
 
 ---
